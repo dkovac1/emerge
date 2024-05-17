@@ -1,0 +1,165 @@
+CapacityToActivityUnit
+- region
+- technology
+- value
+
+Conversionld
+- timeslice
+- daytype/dailytimebracket/season/mode_of_operation
+- value
+
+Conversionlh
+- timeslice
+- dailytimebracket/season/mode_of_operation
+- value
+
+Conversionls
+- timeslice
+- season
+- value
+
+OperationalLife
+- region
+- technology
+- value
+
+OperationalLifeStorage
+- region
+- storage
+- value
+
+TechnologyFromStorage
+- region
+- technology
+- storage
+- daytype/dailytimebracket/season/mode_of_operation
+- value
+
+TechnologyToStorage
+- region
+- technology
+- storage
+- dailytimebracket/season/mode_of_operation
+- value
+
+AccumulatedAnnualDemand
+- region
+- fuel
+- year
+- value
+
+AvailabilityFactor
+- region
+- technology
+- year
+- value
+
+CapacityFactor
+- region
+- technology
+- timeslice
+- year
+- value
+
+CapitalCost
+- region
+- technology
+- year
+- value
+
+EmissionActivityRatio
+- region
+- technology
+- emission
+- daytype/dailytimebracket/season/mode_of_operation
+- year
+- value
+
+EmissionsPenalty
+- region
+- emission
+- year
+- value
+
+FixedCost
+- region
+- technology
+- year
+- value
+
+InputActivityRatio
+- region
+- technology
+- fuel
+- daytype/dailytimebracket/season/mode_of_operation
+- year
+- value
+
+OutputActivityRatio
+- region
+- technology
+- fuel
+- daytype/dailytimebracket/season/mode_of_operation
+- year
+- value
+
+ReserveMargin
+- region
+- year
+- value
+
+ReserveMarginTagFuel
+- region
+- fuel
+- year
+- value
+
+ReserveMarginTagTechnology
+- region
+- technology
+- year
+- value
+
+ResidualCapacity
+- region
+- technology
+- year
+- value
+
+SpecifiedAnnualDemand
+- region
+- fuel
+- year
+- value
+
+SpecifiedDemandProfile
+- region
+- fuel
+- timeslice
+- year
+- value
+
+TotalAnnualMaxCapacity
+- region
+- technology
+- year
+- value
+
+TotalAnnualMinCapacity
+- region
+- technology
+- year
+- value
+
+VariableCost
+- region
+- technology
+- daytype/dailytimebracket/season/mode_of_operation
+- year
+- value
+
+YearSplit
+- timeslice
+- year
+- value
+
