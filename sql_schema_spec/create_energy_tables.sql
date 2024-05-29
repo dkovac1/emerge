@@ -2,7 +2,7 @@ select * from new_test.year_month_day_hour where year = 2005 and month = 3 and d
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
--- Drop and recreate Countries table within the emerge_1 schema
+
 DROP TABLE IF EXISTS new_test.countries cascade;
 CREATE TABLE new_test.countries (
     country_code VARCHAR(3) PRIMARY KEY,
@@ -10,14 +10,14 @@ CREATE TABLE new_test.countries (
     region VARCHAR(100)
 );
 
--- Drop and recreate Countries table within the emerge_1 schema
+
 DROP TABLE IF EXISTS new_test.cities cascade;
 CREATE TABLE new_test.cities (
     city_name VARCHAR(100) PRIMARY KEY,
     county VARCHAR(100)
 );
 
--- Drop and recreate Locations table
+
 DROP TABLE IF EXISTS new_test.locations cascade;
 CREATE TABLE new_test.locations (
     location_id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -30,14 +30,14 @@ CREATE TABLE new_test.locations (
     FOREIGN KEY (city_name) REFERENCES new_test.cities(city_name)
 );
 
--- Drop and recreate Cost table
+
 DROP TABLE IF EXISTS new_test.energy_sources cascade;
 CREATE TABLE new_test.energy_sources (
     source_id INT PRIMARY KEY,
-    source_name VARCHAR(100) -- wind, solar, pv, coal, air?, unknown...
+    source_name VARCHAR(100) -- wind, solar, pv, coal, air, unknown...
 );
 
--- Drop and recreate Cost table
+
 DROP TABLE IF EXISTS new_test.energy_types cascade;
 CREATE TABLE new_test.energy_types (
     energy_type_id INT PRIMARY KEY,
@@ -81,16 +81,16 @@ CREATE TABLE new_test.resource_availability (
 );
 
 
-DROP TABLE IF EXISTS new_test.sector_type;
+DROP TABLE IF EXISTS new_test.sector_type cascade;
 CREATE TABLE new_test.sector_type (
     sector_type_id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
     sector_type_name VARCHAR(100) -- industrial, agricultural, domestic, transport
 );
 
-DROP TABLE IF EXISTS new_test.technology_type;
+DROP TABLE IF EXISTS new_test.technology_type cascade;
 CREATE TABLE new_test.technology_type (
     technology_type_id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-    technology_type_name VARCHAR(100) -- electricity, thermal
+    technology_type_name VARCHAR(100)
 );
 
 
