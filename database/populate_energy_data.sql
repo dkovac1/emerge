@@ -1,23 +1,19 @@
 -- Insert sample data into the countries table
 INSERT INTO new_test.countries (country_code, country_name, region)
 VALUES
-    ('USA', 'United States of America', 'North America'),
-    ('CAN', 'Canada', 'North America'),
-    ('MEX', 'Mexico', 'North America');
+    ('CRO', 'Croatia', 'Balkan'),
+    ('AUS', 'Australia', 'Oceania');
 
 INSERT INTO new_test.cities (city_name, county)
 VALUES
-    ('New York', 'New York County'),
-    ('Los Angeles', 'Los Angeles County'),
-    ('Toronto', 'Toronto County'),
-    ('Mexico City', 'Mexico City County');
+    ('Zagreb', 'Grad Zagreb'),
+    ('Sydney', 'New South Wales coast');
 
 INSERT INTO new_test.locations (location_name, country_code, city_name, location_type, additional_details)
 VALUES
-    ('Location A', 'USA', 'New York', 'Generator', 'Located near the main grid'),
-    ('Location B', 'USA', 'Los Angeles', 'Load Point', 'High load area in the west'),
-    ('Location C', 'CAN', 'Toronto', 'Generator', 'Primary generator for eastern Canada'),
-    ('Location D', 'MEX', 'Mexico City', 'Load Point', 'Central load point in Mexico City');
+    ('House in Zagreb', 'CRO', 'Zagreb', 'House', 'Example of greenadvise input data'),
+    ('North side of Zagreb', 'CRO', 'Zagreb', 'Location region', 'Example of location region'),
+    ('Electrical grid in Sydney', 'AUS', 'Sydney', 'Electrical grid', 'Example of circe input data');
 
 -- Insert sample data into the energy_sources table
 INSERT INTO new_test.energy_sources (source_id, source_name)
@@ -47,7 +43,7 @@ VALUES
     (5, 'distribution'),
     (6, 'el_price_1'),
     (7, 'el_price_2'),
-    (7, 'el_price_3');
+    (8, 'el_price_3');
 
 -- Insert sample data into the sector_type table
 INSERT INTO new_test.sector_type (sector_type_name)
@@ -56,6 +52,14 @@ VALUES
     ('agricultural'),
     ('domestic'),
     ('transport');
+
+-- Insert sample data into the sector_type table
+INSERT INTO new_test.consumption_type (consumption_type_name)
+VALUES
+    ('demand_09'),
+    ('demand_15'),
+    ('demand_27'),
+    ('elec_demand_no_heat');
 
 -- Insert sample data into the technology_type table
 INSERT INTO new_test.technology_type (technology_type_name)

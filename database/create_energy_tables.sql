@@ -2,7 +2,6 @@ select * from new_test.year_month_day_hour where year = 2005 and month = 3 and d
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
-
 DROP TABLE IF EXISTS new_test.countries cascade;
 CREATE TABLE new_test.countries (
     country_code VARCHAR(3) PRIMARY KEY,
@@ -16,7 +15,6 @@ CREATE TABLE new_test.cities (
     city_name VARCHAR(100) PRIMARY KEY,
     county VARCHAR(100)
 );
-
 
 DROP TABLE IF EXISTS new_test.locations cascade;
 CREATE TABLE new_test.locations (
@@ -44,14 +42,14 @@ CREATE TABLE new_test.energy_types (
     energy_type_name VARCHAR(100) -- thermal, electricity ...
 );
 
--- Drop and recreate Cost table
+
 DROP TABLE IF EXISTS new_test.cost_type cascade;
 CREATE TABLE new_test.cost_type (
     cost_type_id INT PRIMARY KEY,
     cost_type_name VARCHAR(100) -- opex, capex, end-user, production, distribution, el_price_1, el_price_2...
 );
 
--- Drop and recreate Cost table
+
 DROP TABLE IF EXISTS new_test.cost;
 CREATE TABLE new_test.cost (
     cost_id INT PRIMARY KEY,
@@ -93,6 +91,12 @@ CREATE TABLE new_test.technology_type (
     technology_type_name VARCHAR(100)
 );
 
+DROP TABLE IF EXISTS new_test.consumption_type cascade;
+CREATE TABLE new_test.consumption_type (
+    consumption_type_id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    consumption_type_name VARCHAR(100)
+);
+
 
 DROP TABLE IF EXISTS new_test.consumption; -- demand
 CREATE TABLE new_test.consumption (
@@ -103,7 +107,9 @@ CREATE TABLE new_test.consumption (
     time_stamp UUID,
     location_id UUID,
     source_id INT,
+    consumption_type_id UUID,
     FOREIGN KEY (technology_type_id) REFERENCES new_test.technology_type(technology_type_id),
+    FOREIGN KEY (consumption_type_id) REFERENCES new_test.consumption_type(consumption_type_id),
     FOREIGN KEY (sector_type_id) REFERENCES new_test.sector_type(sector_type_id),
     FOREIGN KEY (time_stamp) REFERENCES new_test.year_month_day_hour(uuid),
     FOREIGN KEY (location_id) REFERENCES new_test.locations(location_id),
@@ -126,7 +132,7 @@ CREATE TABLE new_test.generation (
 );
 
 
-DROP TABLE IF EXISTS new_test.energy_flow_type;
+DROP TABLE IF EXISTS new_test.energy_flow_type cascade;
 CREATE TABLE new_test.energy_flow_type (
     energy_flow_type_id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
     energy_flow_type_name VARCHAR(100)  -- import, export, storage
