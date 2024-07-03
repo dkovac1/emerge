@@ -1,11 +1,16 @@
 import pandas as pd
-from db import truncate_table, create_db_connection
+from scripts import db_connection
+import os
 
 
-engine = create_db_connection()
-schema_name = "new_emerge"
+engine = db_connection.create_db_connection()
+schema_name = "new_test"
 
-xls = pd.ExcelFile('raw_data/Australia.xlsx')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_file_path = os.path.join(current_dir, '..', '..', 'data', 'input_files', 'CIRCE', 'Australia.xlsx')
+path = os.path.normpath(root_file_path)
+
+xls = pd.ExcelFile(path)
 
 # BRANCH TYPES
 sample_data = {
@@ -13,7 +18,7 @@ sample_data = {
     'description': ["", ""]
 }
 table_name = "branch_type"
-truncate_table(engine, schema_name, table_name)
+db_connection.truncate_table(engine, schema_name, table_name)
 df = pd.DataFrame(sample_data)
 df.to_sql(name=table_name,
             con=engine,
@@ -23,7 +28,7 @@ df.to_sql(name=table_name,
 
 
 def ingest_australia_data(df, engine, schema, table, orig_cols, col_aliases, type):
-    truncate_table(engine, schema, table)
+    db_connection.truncate_table(engine, schema, table)
     temp_df = df[orig_cols]
     temp_df.rename(columns=col_aliases, inplace=True, errors='raise')
 

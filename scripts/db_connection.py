@@ -3,7 +3,9 @@ from sqlalchemy import create_engine, text
 import os
 from sshtunnel import SSHTunnelForwarder
 
-path = os.path.relpath("emerge_postgres_key.pem")
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_file_path = os.path.join(current_dir, '..', 'emerge_postgres_key.pem')
+path = os.path.normpath(root_file_path)
 
 SSH_HOST = '4.232.65.165'
 SSH_USERNAME = 'emerge'
@@ -20,6 +22,18 @@ def truncate_table(engine, schema, table):
     with engine.connect() as conn:
         conn.execute(text(f"TRUNCATE TABLE {schema}.{table} RESTART IDENTITY CASCADE;"))
         conn.commit()
+
+
+def query_table(engine, schema, table, year, month, day, hour):
+    with engine.connect() as conn:
+        result = conn.execute(text(f"SELECT uuid from {schema}.{table} where year = {year} and month = {month} and day = {day} and hour = {hour};"))
+        conn.commit()
+
+        row = result.fetchone()
+        if row:
+            return row[0]
+        else:
+            return None
 
 
 def start_ssh_tunnel():
