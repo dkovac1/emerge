@@ -1,0 +1,11 @@
+,Total installed costs,,,Load factor,,,Levelized cost of energy,,
+,(2022 USD/kW),,,(%),,,(2022 USD/kWh),,
+,2010,2022,Percentage change,2010,2022,Percentage change,2010,2022,Percentage change
+Bioenergy,2 904,2 162,-26 %,72,72,1 %,0.082,0.061,-25 %
+Geothermal,2 904,3 478,20 %,87,85,-2 %,0.053,0.056,6 %
+Hydroelectricity,1 407,2 881,105 %,44,46,4 %,0.042,0.061,47 %
+Solar,5 124,876,-83 %,14,17,23 %,0.445,0.049,-89 %
+photovoltaic,,,,,,,,,
+CSP,10 082,4 274,-58 %,30,36,19 %,0.38,0.118,-69 %
+Onshore wind,2 179,1 274,-42 %,27,37,35 %,0.107,0.033,-69 %
+Offshore wind,5 217,3 461,-34 %,38,42,10 %,0.197,0.081,-59 %

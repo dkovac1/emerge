@@ -1,0 +1,185 @@
+electricity generation in Morocco,Value,Year,Units
+Coal,8783,2000, GWh
+Coal,11639,2001, GWh
+Coal,11517,2002, GWh
+Coal,11751,2003, GWh
+Coal,12519,2004, GWh
+Coal,12731,2005, GWh
+Coal,12902,2006, GWh
+Coal,12457,2007, GWh
+Coal,11662,2008, GWh
+Coal,10863,2009, GWh
+Coal,10866,2010, GWh
+Coal,11679,2011, GWh
+Coal,11856,2012, GWh
+Coal,12030,2013, GWh
+Coal,15818,2014, GWh
+Coal,17113,2015, GWh
+Coal,16985,2016, GWh
+Coal,17545,2017, GWh
+Coal,21260,2018, GWh
+Coal,26899,2019, GWh
+Coal,27205,2020, GWh
+Coal,28282,2021, GWh
+Coal,29064,2022, GWh
+Oil,3298,2000, GWh
+Oil,2330,2001, GWh
+Oil,2674,2002, GWh
+Oil,3168,2003, GWh
+Oil,3330,2004, GWh
+Oil,3457,2005, GWh
+Oil,3309,2006, GWh
+Oil,3455,2007, GWh
+Oil,4843,2008, GWh
+Oil,4446,2009, GWh
+Oil,5564,2010, GWh
+Oil,6795,2011, GWh
+Oil,7058,2012, GWh
+Oil,4742,2013, GWh
+Oil,2707,2014, GWh
+Oil,2211,2015, GWh
+Oil,2882,2016, GWh
+Oil,3493,2017, GWh
+Oil,1249,2018, GWh
+Oil,792,2019, GWh
+Oil,689,2020, GWh
+Oil,1375,2021, GWh
+Oil,4186,2022, GWh
+Natural gas,,2000, GWh
+Natural gas,,2001, GWh
+Natural gas,,2002, GWh
+Natural gas,,2003, GWh
+Natural gas,0,2004, GWh
+Natural gas,2003,2005, GWh
+Natural gas,2512,2006, GWh
+Natural gas,2823,2007, GWh
+Natural gas,2867,2008, GWh
+Natural gas,3054,2009, GWh
+Natural gas,2963,2010, GWh
+Natural gas,4051,2011, GWh
+Natural gas,6201,2012, GWh
+Natural gas,5823,2013, GWh
+Natural gas,5600,2014, GWh
+Natural gas,5784,2015, GWh
+Natural gas,5909,2016, GWh
+Natural gas,5836,2017, GWh
+Natural gas,5197,2018, GWh
+Natural gas,4697,2019, GWh
+Natural gas,3458,2020, GWh
+Natural gas,3462,2021, GWh
+Natural gas,686,2022, GWh
+Hydro,718,2000, GWh
+Hydro,871,2001, GWh
+Hydro,850,2002, GWh
+Hydro,1456,2003, GWh
+Hydro,1617,2004, GWh
+Hydro,1426,2005, GWh
+Hydro,1601,2006, GWh
+Hydro,1331,2007, GWh
+Hydro,1373,2008, GWh
+Hydro,2952,2009, GWh
+Hydro,3631,2010, GWh
+Hydro,2139,2011, GWh
+Hydro,1816,2012, GWh
+Hydro,2990,2013, GWh
+Hydro,2033,2014, GWh
+Hydro,2281,2015, GWh
+Hydro,1662,2016, GWh
+Hydro,1564,2017, GWh
+Hydro,1997,2018, GWh
+Hydro,1653,2019, GWh
+Hydro,1290,2020, GWh
+Hydro,1212,2021, GWh
+Hydro,679,2022, GWh
+Wind,64,2000, GWh
+Wind,206,2001, GWh
+Wind,194,2002, GWh
+Wind,203,2003, GWh
+Wind,199,2004, GWh
+Wind,206,2005, GWh
+Wind,183,2006, GWh
+Wind,279,2007, GWh
+Wind,298,2008, GWh
+Wind,391,2009, GWh
+Wind,659,2010, GWh
+Wind,692,2011, GWh
+Wind,728,2012, GWh
+Wind,1356,2013, GWh
+Wind,1924,2014, GWh
+Wind,2519,2015, GWh
+Wind,3000,2016, GWh
+Wind,3034,2017, GWh
+Wind,3863,2018, GWh
+Wind,4723,2019, GWh
+Wind,4591,2020, GWh
+Wind,5106,2021, GWh
+Wind,5355,2022, GWh
+Solar PV,,2000, GWh
+Solar PV,,2001, GWh
+Solar PV,,2002, GWh
+Solar PV,,2003, GWh
+Solar PV,,2004, GWh
+Solar PV,,2005, GWh
+Solar PV,,2006, GWh
+Solar PV,,2007, GWh
+Solar PV,,2008, GWh
+Solar PV,,2009, GWh
+Solar PV,,2010, GWh
+Solar PV,,2011, GWh
+Solar PV,,2012, GWh
+Solar PV,,2013, GWh
+Solar PV,,2014, GWh
+Solar PV,1,2015, GWh
+Solar PV,1,2016, GWh
+Solar PV,1,2017, GWh
+Solar PV,156,2018, GWh
+Solar PV,395,2019, GWh
+Solar PV,389,2020, GWh
+Solar PV,534,2021, GWh
+Solar PV,584,2022, GWh
+Solar thermal,,2000, GWh
+Solar thermal,,2001, GWh
+Solar thermal,,2002, GWh
+Solar thermal,,2003, GWh
+Solar thermal,,2004, GWh
+Solar thermal,,2005, GWh
+Solar thermal,,2006, GWh
+Solar thermal,,2007, GWh
+Solar thermal,,2008, GWh
+Solar thermal,,2009, GWh
+Solar thermal,,2010, GWh
+Solar thermal,,2011, GWh
+Solar thermal,,2012, GWh
+Solar thermal,,2013, GWh
+Solar thermal,,2014, GWh
+Solar thermal,4,2015, GWh
+Solar thermal,400,2016, GWh
+Solar thermal,414,2017, GWh
+Solar thermal,793,2018, GWh
+Solar thermal,1186,2019, GWh
+Solar thermal,1130,2020, GWh
+Solar thermal,1285,2021, GWh
+Solar thermal,863,2022, GWh
+Other sources,,2000, GWh
+Other sources,,2001, GWh
+Other sources,,2002, GWh
+Other sources,,2003, GWh
+Other sources,0,2004, GWh
+Other sources,0,2005, GWh
+Other sources,0,2006, GWh
+Other sources,0,2007, GWh
+Other sources,0,2008, GWh
+Other sources,0,2009, GWh
+Other sources,0,2010, GWh
+Other sources,0,2011, GWh
+Other sources,0,2012, GWh
+Other sources,1302,2013, GWh
+Other sources,1302,2014, GWh
+Other sources,1302,2015, GWh
+Other sources,1302,2016, GWh
+Other sources,1302,2017, GWh
+Other sources,1302,2018, GWh
+Other sources,1302,2019, GWh
+Other sources,1302,2020, GWh
+Other sources,1302,2021, GWh
+Other sources,1302,2022, GWh

@@ -124,7 +124,7 @@ energy infrastructure improvement for higher penetration of renewable units**.
 ### GREENADVISE by UNIZAG
 
 GREENADVISE is an investment advisor based on a Python module and used for the optimization of
-small-scale energy systems on a community or small city scale. Its’ application can range
+small-scale energy systems on a community or small city scale. Its' application can range
 from household or building level to small city and is suitable for citizens and civil societies without the energy
 background in formal education. Moreover, the capacity optimization for the used technologies such as 
 PV plant, battery storage, heat pumps etc. is also included in the model. 
@@ -148,3 +148,112 @@ EMERGE database will be established to automate the data input and enhance user 
 Besides the version suitable for citizens and general society, the tool will also be upgraded to second 
 version by improving the code to enable **stochastic and robust modelling to address the uncertainty** of 
 the model which will be used by energy planning experts for more complex calculations.
+
+# EU EMERGE Data Import Tool
+
+This tool facilitates the import of Excel data files into an Azure PostgreSQL database. It provides a structured way to organize and process data from different partners (UNIZAG, CIRCE) while maintaining data integrity and providing detailed logging.
+
+## Prerequisites
+
+- Python 3.8 or higher
+- Access to Azure PostgreSQL database
+- Required Python packages (install using `pip install -r requirements.txt`)
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd eu_emerge
+```
+
+2. Create and activate a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+3. Install required packages:
+```bash
+pip install -r requirements.txt
+```
+
+## Data Organization
+
+The tool expects data to be organized in the following structure:
+
+```
+data/
+├── raw/                    # Original Excel files
+│   ├── UNIZAG/            # UNIZAG partner data
+│   │   ├── energy/        # Energy-related data
+│   │   ├── grid_elements/ # Grid elements data
+│   │   └── time_series/   # Time series data
+│   └── CIRCE/             # CIRCE partner data
+│       ├── energy/
+│       ├── grid_elements/
+│       └── time_series/
+├── processed/             # Successfully imported files
+└── logs/                 # Import logs
+```
+
+### Sample Data Structure
+
+Place your Excel files in the appropriate directories based on their content:
+
+1. Energy data files should be placed in:
+   - `data/raw/UNIZAG/energy/`
+   - `data/raw/CIRCE/energy/`
+
+2. Grid elements data files should be placed in:
+   - `data/raw/UNIZAG/grid_elements/`
+   - `data/raw/CIRCE/grid_elements/`
+
+3. Time series data files should be placed in:
+   - `data/raw/UNIZAG/time_series/`
+   - `data/raw/CIRCE/time_series/`
+
+## Configuration
+
+1. Update the database connection string in `scripts/import_data.py`:
+```python
+db_connection_string = "postgresql://user:password@host:port/database"
+```
+
+2. The table mapping in the script determines which Excel files go to which database tables:
+```python
+table_mapping = {
+    'energy': {'table': 'energy_data', 'schema': 'public'},
+    'grid_elements': {'table': 'grid_elements', 'schema': 'public'},
+    'time_series': {'table': 'time_series', 'schema': 'public'}
+}
+```
+
+## Running the Import
+
+1. Ensure your Excel files are placed in the correct directories under `data/raw/`
+
+2. Run the import script:
+```bash
+python scripts/import_data.py
+```
+
+3. Monitor the import progress:
+   - Console output will show real-time progress
+   - Detailed logs are saved in `data/logs/import.log`
+   - Successfully imported files are moved to `data/processed/`
+
+## Troubleshooting
+
+1. Check the log file at `data/logs/import.log` for detailed error messages
+2. Ensure all Excel files are in the correct format (.xlsx)
+3. Verify database connection string and credentials
+4. Check that the target tables exist in the database
+
+## Contributing
+
+Please follow the existing folder structure when adding new data files. For any modifications to the import process, ensure backward compatibility is maintained.
+
+## License
+
+[Your License Information]

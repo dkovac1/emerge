@@ -1,0 +1,78 @@
+bus_from,bus_to,X
+Substation 60 kV Agdz,Substation 225 kV Agdz,0.1
+Substation 400kV de Melloussa,Substation 225kV de Melloussa,0.012
+Substation 60 kV de Tensift II,Substation 225 kV de Tensift II,0.1
+Substation 60 KV de Toulal,Substation 225 KV de Toulal,0.1
+Substation 60 KV de Chichaoua,Substation 225 KV de Chichaoua,0.1
+Substation 225 KV de Chichaoua,Substation 400 KV de Chichaoua,0.15
+Substation Ghanem 60 KV,Substation Ghanem 225 KV,0.1
+Substation Source Aouama 60 KV,Substation Source Aouama 225 KV,0.1
+Substation 60kV Laawamer,Substation 225 kV Laawamer,0.1
+Substation 225 kV Shoul,Substation 60 kV Shoul,0.1
+Substation 60 kV Zaer,Substation 225 kV Zaer,0.1
+Substation 400 kV Mediouna,Substation 225kV Mediouna,0.15
+Substation 60 KV Khouribga II,Substation 225 KV Khouribga II,0.1
+Substation 225 KV Chiker,Substation 60 KV Chiker,0.1
+Substation 225/60 kV de Sidi Bennour,Sidi Benour 60,0.1
+Substation 225/60/22 KV Oujda,Substation 60 kV Oujda,0.1
+Substation de Bourdim 225kv,Substation de Bourdim 60kv,0.1
+Substation de Bourdim 225kv,Substation de Bourdim 400kv,0.15
+Substation 60 KV Taza II,Substation 225 KV Taza II,0.1
+Substation 60 kV de Settat,Substation 225 kV de Settat,0.1
+Substation Tiznit II 60,Substation Tiznit II 225,0.1
+Substation 225 kV El Ouali,Substation 60 kV El Ouali,0.1
+Substation 60 kv Chefchaoun,Substation 225 kv Chefchaoun,0.1
+Substation 60 kV Imzouren,Substation 225 kV Imzouren,0.1
+Substation 225 kV Loukkos,Substation 60 kV Loukkos,0.1
+Substation 400 kV de Oualili,Substation 225kV de Oualili,0.15
+Substation 60 KV Agadir,Substation 225 KV Agadir,0.1
+Substation 225 kV Tazart,Substation 60 kV Tazart,0.1
+Substation 225 KV GLALCHAL,Substation 60 KV GLALCHAL,0.1
+Substation 60 kV d’Ait Melloul,Substation 225 kV d’Ait Melloul,0.1
+Substation 60 KV Fki Ben Salah,Substation 225 KV Fki Ben Salah,0.1
+Substation 60kv Tizgui,Substation 150 kv Tizgui,0.12
+Substation 150 kv Tizgui,Substation 225 kv Tizgui,0.1
+Substation 60kv de Benguerir,Substation 225 kv de Benguerir,0.1
+Substation 400kV Chemaia,Substation 225kV Chemaia,0.15
+Substation 225 kV d’Errachidia,Substation 60 kV d’Errachidia,0.1
+M Fassis 225 Khouribga,M Fassis 60 Khouribga,0.1
+Substation 60 kV Ouarzazate,Substation 225 kV Ouarzazate,0.1
+Substation 225 KV de Khenifra,Substation 60 KV de Khenifra,0.1
+Substation 225kv de Tensift 1,Substation 60kv de Tensift 1,0.1
+Substation Sebt Guerdane 60/22 kV Taroudant,Substation Sebt Guerdane 225 kV Taroudant,0.1
+Substation Foum Tizi 150,Substation Foum Tizi 60,0.12
+Substation 225 kV Fouarat,Substation 60 kV Fouarat,0.1
+Substation 225 kV Oulad Fares,Substation 60 kV Oulad Fares,0.1
+Substation 225kv de Sidi Bouguedra,Substation 60kv de Sidi Bouguedra,0.1
+Substation 225 kV Kelaa des Sraghnas,Substation 60 kV Kelaa des Sraghnas,0.1
+Substation 60 kV de Berkane,Substation 225 kV de Berkane,0.1
+Substation 400 kV Agadir II,Substation 225 kV Agadir II,0.15
+Substation 225 kV Tinghir,Substation 60 kV Tinghir,0.1
+Substation blindé 400 kV Béni Harchane,Substation blindé 225 kV Béni Harchane,0.15
+Substation source Smir 60,Substation source Smir 225,0.1
+Substation 225 kV d'Essaouira,Substation 60 kV d'Essaouira,0.1
+Substation Ouled Mohamed 60 kv,Substation Ouled Mohamed 225 kv,0.1
+Substation 225 Agdaz,Substation 60 Agdaz,0.1
+Near Jorf Lasfar 60 KV,Near Jorf Lasfar 225 KV,0.1
+Centrale hydroélectrique Al Wahda 60,Centrale hydroélectrique Al Wahda 225,0.1
+Barrage Moulay Youssef 60,Barrage Moulay Youssef 225,0.1
+Thermal plant Jorf Lasfar 225,Thermal plant Jorf Lasfar 400,0.15
+Thermal plant Jorf Lasfar 225,Thermal plant Jorf Lasfar 60,0.1
+Thermal plant Jerada 60,Thermal plant Jerada 225,0.1
+Thermal plant Jerada 225,Thermal plant Jerada 400,0.15
+Thermal plant Tit Mellil 60,Thermal plant Tit Mellil 225,0.1
+Thermal plant Tétouan 225,Thermal plant Tétouan 60,0.1
+Thermal plant Tan-Tan 60,Thermal plant Tan-Tan 225,0.1
+Wind farm Tarfaya 60,Wind farm Tarfaya 225,0.1
+Aïn Beni Mathar integrated combined cycle thermo-solar plant 60,Aïn Beni Mathar integrated combined cycle thermo-solar plant 225,0.1
+Thermal plant Tahaddart 60,Thermal plant Tahaddart 225,0.1
+Thermal plant Tahaddart 225,Thermal plant Tahaddart 400,0.15
+poste 225 KV de Mibladen,poste 60 KV de Mibladen,0.1
+Poste 225 kV Laayoune II,Poste 400 kV Laayoune II,0.15
+Poste 225 kv Dakhla,Poste 60 kv Dakhla,0.1
+poste 400 Ait seghrouchen oulad ayyad,poste 225 Ait seghrouchen oulad ayyad,0.15
+Poste Layoune 1 60 Kv,Poste Layoune 1 225 KV,0.1
+Poste 225 kV Selouane,Poste 60 kV Selouane,0.1
+poste 400 KV BOUJDOUR,poste 225 KV BOUJDOUR,0.15
+Substation 225kV de Melloussa,Poste 60kV de Melloussa,0.1
+Poste 225 kv Dakhla,Poste 60 kv Dakhla,0.1
